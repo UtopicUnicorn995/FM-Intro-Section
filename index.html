@@ -5,35 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <header class="header">
+      <h2 class="header__logo">snap</h2>
+    <div class="header__open">
+      <img class="header__icon" src="./images/icon-menu.svg" alt="menu">
+    </div>
+    <nav class="header__nav">
+      <div class="header__close">
+        <img class="header__icon" src="./images/icon-close-menu.svg" alt="close-menu">
+      </div>
+      <ul class="header__nav-list">
+        <li class="header__nav-item">Features <img src="./images/icon-arrow-down.svg" alt=""></li>
+        <li class="header__nav-item">Company</li>
+        <li class="header__nav-item">Careers</li>
+        <li class="header__nav-item">About</li>
+      </ul>
+      <ul class="header__nav-list">
+        <li class="header__nav-item">Login</li>
+        <li class="header__nav-item">Register</li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <img class="hero__image" src="./images/image-hero-mobile.png" alt="">
+    </section>
+    <section class="content">
+      <h1 class="content__title">Make remote work</h1>
+      <p class="content__description">
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p>
+      <button class="content__button">
+        Learn more
+      </button>
+    </section>
+  </main>
+  <footer class="footer">
+    <ul class="footer__client-list">
+      <li class="footer__client-item"><img class="footer__client-logo" src="./images/client-databiz.svg" alt="Databiz"  style="width: 90px;"></li>
+      <li class="footer__client-item"><img class="footer__client-logo" src="./images/client-audiophile.svg" alt="Audiophile"  style="width: 55px;"></li>
+      <li class="footer__client-item"><img class="footer__client-logo" src="./images/client-meet.svg" alt="Meet"></li>
+      <li class="footer__client-item"><img class="footer__client-logo" src="./images/client-maker.svg" alt="Maker"></li>
+    </ul>
+  </footer>
 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="./js/script.js"></script>
 </body>
 </html>
