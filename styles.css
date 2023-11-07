@@ -94,6 +94,10 @@ ul li{
     display: none;
 }
 
+.header__nav-list .header__nav-item.nav-company.hidden ul{
+    display: none;
+}
+
 .header__nav-list.btn-group{
     margin: 10px 0;
 }
@@ -111,9 +115,23 @@ ul li{
     border: none;
 }
 
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-.main .hero .hero__image{
+
+.main .hero {
+    background-image: url(./images/image-hero-mobile.png);
     width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main section{
+    max-width: 568px;
 }
 
 .main .content{

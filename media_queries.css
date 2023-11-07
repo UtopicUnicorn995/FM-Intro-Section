@@ -1,0 +1,88 @@
+
+
+@media (min-width: 568px) {
+    .main .hero {
+        height: 100%;
+        width: 100%;
+        background-image: url(./images/image-hero-desktop.png);
+    }
+
+    .main{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        flex-direction: row-reverse;
+        padding: 0 10px;
+    }
+
+    .main section{
+        max-width: 280px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .main{
+        padding: 0 25px;
+       
+    }
+
+    .main section{
+        max-width: 350px;
+    }
+    .header .header__nav{
+        height: 35px;
+        width: 100%;
+        display: flex;
+        background-color: var(--almost-white);
+        position: static;
+        z-index: 2;
+        padding: 25px;
+        right: 0px;
+        color: var(--medium-grey);
+        box-shadow: none
+    }
+
+    .header__nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__nav-list.btn-group{
+        margin: 0;
+        display: flex;
+    }
+
+    .header .header__close, .header .header__open{
+        display: none;
+    }
+
+    .header__icon{
+        display: none;
+    }
+
+    .header__nav-list.btn-group .header__nav-item{
+        margin: 0;
+       
+    }
+
+
+    .header__nav-list.nav__container{
+        flex-direction: row;
+    }
+    
+
+}
+
+@media (min-width: 1080px) {
+    .main section{
+        max-width: 500px;
+    }
+    .main{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 100%;
+        padding: 0 75px;
+    }
+}
