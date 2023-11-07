@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="header">
@@ -19,13 +20,27 @@
       <div class="header__close">
         <img class="header__icon" src="./images/icon-close-menu.svg" alt="close-menu">
       </div>
-      <ul class="header__nav-list">
-        <li class="header__nav-item">Features <img src="./images/icon-arrow-down.svg" alt=""></li>
-        <li class="header__nav-item">Company</li>
+      <ul class="header__nav-list nav__container">
+        <li class="header__nav-item nav-features">Features <span class='up'></span><br>
+        <ul>
+          <li><img src="./images/icon-todo.svg" alt="Todo Icon">Todo List</li>
+          <li><img src="./images/icon-calendar.svg" alt="Calendar Icon">Calendar</li>
+          <li><img src="./images/icon-reminders.svg" alt="Reminders Icon"> Reminders</li>
+          <li><img src="./images/icon-planning.svg" alt="Planning Icon"> Planning</li>
+        </ul>
+        </li>
+        
+        <li class="header__nav-item nav-company">Company <span class='up'></span><br>
+        <ul>
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul>
+        </li>
         <li class="header__nav-item">Careers</li>
         <li class="header__nav-item">About</li>
       </ul>
-      <ul class="header__nav-list">
+      <ul class="header__nav-list btn-group">
         <li class="header__nav-item">Login</li>
         <li class="header__nav-item">Register</li>
       </ul>
@@ -56,5 +71,6 @@
   </footer>
 
   <script src="./js/script.js"></script>
+  <script src="./js/script1.js"></script>
 </body>
 </html>

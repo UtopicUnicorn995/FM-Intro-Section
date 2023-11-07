@@ -44,12 +44,73 @@ ul li{
 .header .header__nav{
     height: 100vh;
     display: none;
-    background-color: rgba(255, 0, 0, 0.7);
+    background-color: var(--almost-white);
     position: absolute;
+    z-index: 2;
     margin-top: -20px;
     padding: 25px;
     right: 0px;
+    color: var(--medium-grey);
+    box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.7);
 }
+
+.header .header__close{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__nav-list.nav__container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+}
+
+.header__nav-list .header__nav-item.nav-features span.up, .header__nav-list .header__nav-item.nav-company span.up{
+    content: url(./images/icon-arrow-up.svg);
+
+}
+.header__nav-list .header__nav-item.nav-features span.down, .header__nav-list .header__nav-item.nav-company span.down{
+    content: url(./images/icon-arrow-down.svg);
+}
+
+.header__nav-list .header__nav-item ul{
+    margin-top: 28px;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.header__nav-list .header__nav-item ul li{
+    display: flex;
+    gap: 14px;
+}
+
+.header__nav-list .header__nav-item ul li img{
+    width: 18px;
+}
+
+.header__nav-list .header__nav-item.nav-features.hidden ul{
+    display: none;
+}
+
+.header__nav-list.btn-group{
+    margin: 10px 0;
+}
+
+.header__nav-list.btn-group .header__nav-item{
+    border: 1px solid var(--almost-black);
+    border-radius: 12px;
+    padding: 10px 0;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.header__nav-list.btn-group .header__nav-item:first-child{
+    border: none;
+}
+
 
 .main .hero .hero__image{
     width: 100%;
@@ -84,13 +145,13 @@ ul li{
 .footer{
     padding: 0 12px;
     width: 100%;
+    overflow: hidden;
 }
 
 .footer .footer__client-list{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;
     animation: slider 5s linear infinite;
 }
 
