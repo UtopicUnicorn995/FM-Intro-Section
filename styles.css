@@ -23,6 +23,7 @@ body{
     width: 100%;
     position: relative;
     height: 100vh;
+    background-color: var(--almost-white);
 }
 
 ul li{
@@ -33,7 +34,7 @@ ul li{
     display: flex;
     justify-content: space-between;
     position: relative;
-    padding: 20px;
+    padding: 16px;
 }
 
 .header .header__logo{
@@ -119,6 +120,7 @@ ul li{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 8px;
 }
 
 
@@ -142,12 +144,15 @@ ul li{
 .main .content .content__title{
     font-size: 34px;
     font-weight: bold;
-    margin: 30px 0;
+    margin: 32.75px 0 16px 0;
+    color: var(--almost-black);
 }
 
 .main .content .content__description{
     font-size: 16px;
-    line-height: 2;
+    font-weight: 500;
+    line-height: 26px;
+    color: var(--medium-grey);
 }
 
 .main .content .content__button{
@@ -157,10 +162,11 @@ ul li{
     border-radius: 13px;
     padding: 12px 20px;
     font-size: 16px;
-    margin: 25px 0;
+    margin: 24px 0;
 }
 
 .footer{
+    margin: 9px 0 0 0;
     padding: 0 12px;
     width: 100%;
     overflow: hidden;
