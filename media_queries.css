@@ -37,7 +37,10 @@
     }
 
     .header .header__logo{
-        margin-right: 40px;
+        margin-right: 64px;
+        margin-top: 4px;
+        margin-left: 1px;
+        letter-spacing: 1px;
     }
 
     .header .header__nav{
@@ -124,7 +127,7 @@
 
 @media (min-width: 1080px) {
     .main{
-        column-gap: 125px;
+        column-gap: 92px;
     }
     .main section{
         max-width: 500px;
@@ -140,6 +143,7 @@
 
     .main .content .content__description{
         max-width: 445px;
+        font-size: 18px;
     }
 
     .main section.content{
@@ -149,13 +153,15 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-        row-gap: 48px;
+        row-gap: 45px;
+        margin-bottom: 62px;
+        margin-left: 32px;
     }
 
     .main .content .content__button{
         margin: 0;
         border-radius: 15px;
-        padding: 15px 30px;
+        padding: 20px 31px;
         font-size: 18px;
     }
     .main section.hero{
@@ -170,5 +176,8 @@
         align-items: center;
         height: 100%;
         padding: 0 75px;
+    }
+    .footer{
+        margin-top: 65px;
     }
 }
