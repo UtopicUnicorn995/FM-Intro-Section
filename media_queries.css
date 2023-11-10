@@ -127,7 +127,7 @@
 
 @media (min-width: 1080px) {
     .main{
-        column-gap: 92px;
+        column-gap: 125px;
     }
     .main section{
         max-width: 500px;
